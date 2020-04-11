@@ -80,7 +80,7 @@ const getTickerRSI_14 = async (ticker) => {
   }
 
     // Get Data from server
-    const call = await ax.get(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${ticker}&outputsize=compact&apikey=CVME68EYU0DNTGGO`);
+    const call = await ax.get(`https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${ticker}&outputsize=compact&apikey=${API_KEY}`);
     const res = call.data;
   
     // Parsing the data
